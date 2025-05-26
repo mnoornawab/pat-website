@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collector Profiles | Collecting PAT</title>
+    <style>
+        :root {
+            --primary: #31326f;
+            --accent: #fbb13c;
+            --light: #f5f6fa;
+            --shadow: rgba(49,50,111,0.08);
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--light);
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, var(--primary) 60%, #474787 100%);
+            color: white;
+            padding: 2.2rem 0 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px var(--shadow);
+        }
+        header h1 {
+            margin: 0 0 0.2em 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            opacity: 0.88;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: white;
+            box-shadow: 0 2px 8px var(--shadow);
+            padding: 0.7rem 0;
+            margin-bottom: 2em;
+            border-radius: 0 0 20px 20px;
+        }
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 1.2em;
+            font-weight: 500;
+            padding: 6px 18px;
+            border-radius: 15px;
+            transition: background 0.2s, color 0.2s;
+        }
+        nav a:hover {
+            background: var(--accent);
+            color: #222;
+        }
+        main {
+            max-width: 700px;
+            margin: 2.5em auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 18px var(--shadow);
+            padding: 2.2em 2em 2em 2em;
+        }
+        h2 {
+            color: var(--primary);
+            margin-top: 0.3em;
+            font-size: 1.7rem;
+        }
+        h3 {
+            color: var(--accent);
+            margin-bottom: 0.6em;
+            margin-top: 1.8em;
+            font-size: 1.25rem;
+        }
+        article {
+            margin-bottom: 2em;
+            overflow: auto;
+        }
+        .profile-img {
+            width: 160px;
+            float: left;
+            margin-right: 20px;
+            border-radius: 12px;
+            box-shadow: 0 1px 8px var(--shadow);
+            border: 2px solid var(--light);
+        }
+        ul {
+            margin: 0 0 1em 1.3em;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.7em;
+        }
+        .collection-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+        .item-card {
+            background: #f8f8fb;
+            border-radius: 10px;
+            box-shadow: 0 1px 6px var(--shadow);
+            width: 42%;
+            min-width: 160px;
+            margin-bottom: 18px;
+            padding: 1em 0.8em 0.8em 0.8em;
+            text-align: center;
+        }
+        .item-card img {
+            width: 80%;
+            max-width: 130px;
+            border-radius: 8px;
+            margin-bottom: 0.6em;
+            border: 2px solid var(--light);
+            box-shadow: 0 1px 6px var(--shadow);
+        }
+        @media (max-width: 720px) {
+            main { padding: 1.3em 0.7em; }
+            nav { flex-direction: column; padding: 1em 0; }
+            nav a { margin: 0.3em 0; }
+            .collection-highlights { flex-direction: column; gap: 0.5em; }
+            .item-card { width: 95%; margin: 0 auto 1em auto; }
+            .profile-img { float: none; display: block; margin: 0 auto 1em auto; }
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+            padding: 1.3em 0;
+            background: linear-gradient(90deg, #474787 60%, var(--primary) 100%);
+            color: #fff;
+            font-size: 1rem;
+            border-radius: 20px 20px 0 0;
+            letter-spacing: 0.7px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Collector Profiles</h1>
+        <p>Grade 12 CAT PAT &mdash; 2025</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research Findings</a>
+        <a href="collectors.html">Collector Profiles</a>
+    </nav>
+    
+    <main>
+        <h2>Meet the Collectors</h2>
+        
+        <article>
+            <h3>Typical Collector Profile</h3>
+            <img src="images/collector1.jpg" alt="Photo of a collector" class="profile-img">
+            <p>Based on my research, the average collector is:</p>
+            <ul>
+                <li>Age: XX years</li>
+                <li>Gender: XX% male, XX% female</li>
+                <li>Collects for: XX years</li>
+                <li>Motivation: [hobby/investment/both]</li>
+            </ul>
+        </article>
+        
+        <article>
+            <h3>Collection Highlights</h3>
+            <p>Some notable items from collectors I interviewed:</p>
+            <div class="collection-highlights">
+                <div class="item-card">
+                    <img src="images/item1.jpg" alt="Rare collectible item 1">
+                    <p>Item description</p>
+                </div>
+                <div class="item-card">
+                    <img src="images/item2.jpg" alt="Rare collectible item 2">
+                    <p>Item description</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        &copy; 2025 <strong>[Your Name]</strong> &ndash; Computer Applications Technology PAT
+    </footer>
+</body>
+</html>
