@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Findings | Collecting PAT</title>
+    <style>
+        :root {
+            --primary: #31326f;
+            --accent: #fbb13c;
+            --light: #f5f6fa;
+            --shadow: rgba(49,50,111,0.08);
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--light);
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, var(--primary) 60%, #474787 100%);
+            color: white;
+            padding: 2.2rem 0 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px var(--shadow);
+        }
+        header h1 {
+            margin: 0 0 0.2em 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            opacity: 0.88;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: white;
+            box-shadow: 0 2px 8px var(--shadow);
+            padding: 0.7rem 0;
+            margin-bottom: 2em;
+            border-radius: 0 0 20px 20px;
+        }
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 1.2em;
+            font-weight: 500;
+            padding: 6px 18px;
+            border-radius: 15px;
+            transition: background 0.2s, color 0.2s;
+        }
+        nav a:hover {
+            background: var(--accent);
+            color: #222;
+        }
+        main {
+            max-width: 700px;
+            margin: 2.5em auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 18px var(--shadow);
+            padding: 2.2em 2em 2em 2em;
+        }
+        h2 {
+            color: var(--primary);
+            margin-top: 0.3em;
+            font-size: 1.7rem;
+        }
+        h3 {
+            color: var(--accent);
+            margin-bottom: 0.6em;
+            margin-top: 1.8em;
+            font-size: 1.25rem;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        ul {
+            margin: 0 0 1em 1.3em;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.7em;
+        }
+        img {
+            display: block;
+            margin: 1.4em auto;
+            max-width: 85%;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px var(--shadow);
+            border: 3px solid var(--light);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2em 0 1.5em 0;
+            background: #fdfdfd;
+            box-shadow: 0 1px 6px var(--shadow);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            text-align: left;
+            padding: 0.75em 0.7em;
+        }
+        th {
+            background: var(--primary);
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background: #f4f6ff;
+        }
+        tr:nth-child(odd) {
+            background: #ffffff;
+        }
+        td {
+            color: #222;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+            padding: 1.3em 0;
+            background: linear-gradient(90deg, #474787 60%, var(--primary) 100%);
+            color: #fff;
+            font-size: 1rem;
+            border-radius: 20px 20px 0 0;
+            letter-spacing: 0.7px;
+        }
+        @media (max-width: 720px) {
+            main { padding: 1.3em 0.7em; }
+            nav { flex-direction: column; padding: 1em 0; }
+            nav a { margin: 0.3em 0; }
+            table, th, td { font-size: 0.95em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Research Findings</h1>
+        <p>Grade 12 CAT PAT &mdash; 2025</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research Findings</a>
+        <a href="collectors.html">Collector Profiles</a>
+    </nav>
+    
+    <main>
+        <h2>Key Data Analysis</h2>
+        
+        <section>
+            <h3>Market Trends</h3>
+            <img src="images/trend-graph.png" alt="Graph showing market trends for collectibles">
+            <p>My research shows that <strong>[your findings here...]</strong></p>
+        </section>
+        
+        <section>
+            <h3>Investment Potential</h3>
+            <table>
+                <tr>
+                    <th>Collectible Type</th>
+                    <th>Average ROI</th>
+                    <th>Popularity</th>
+                </tr>
+                <tr>
+                    <td>[Your collectible]</td>
+                    <td>X%</td>
+                    <td>High</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+        </section>
+        
+        <section>
+            <h3>Survey Results</h3>
+            <p>From my survey of 20 collectors:</p>
+            <ul>
+                <li>XX% collect as a hobby</li>
+                <li>XX% collect as investment</li>
+                <li>Average years collecting: X</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        &copy; 2025 <strong>[Your Name]</strong> &ndash; Computer Applications Technology PAT
+    </footer>
+</body>
+</html>
